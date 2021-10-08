@@ -1,0 +1,33 @@
+body{
+    font-family:'calibri';
+    font-size:18px;
+}
+
+h1, h2, footer{
+    background-color:red;
+}
+
+.site-title{
+    color:blue;
+}
+
+#my-image{
+    border:black 2px solid;
+}
+
+ul{
+    list-style-type: square;
+}
+
+li:nth-child(2n-1){
+    background-color:aqua;
+}
+
+a{
+    text-decoration:none;
+    background-color:aqua;
+    border:black 2px solid;
+ }
+ a:hover{
+    color:magenta;
+}
