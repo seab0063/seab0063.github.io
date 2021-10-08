@@ -28,6 +28,7 @@ a{
     background-color:aqua;
     border:black 2px solid;
  }
+ 
  a:hover{
     color:magenta;
 }
