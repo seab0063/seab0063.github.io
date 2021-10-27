@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Document information -->
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="css/css.css" rel="stylesheet">
+  </head>
+  <header>
+    <h1>Yoshi</h1>
+  </header>
+  <body>
+    <div id="container">
+    <!-- Document Content -->
+    <nav>
+      <div>
+      <ul>
+          <li>
+              <a href="#">
+                  <span>HOME</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <span>STORY</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <span>CONTACT</span>
+              </a>
+          </li>
+      </ul>
+      </div>
+  </nav>
+
+  <div>
+    <span class="using-rem">The Life of a Yoshi</span>
+  </div>
+
+    <img src="images/yoshi.jpg" alt="Yoshi" width="250"/>
+    <article>
+      <!--I got this information from https://www.mariowiki.com/Yoshi_(species)-->
+      <section>
+      <p>Yoshis (referred to as Yoshisaurs in the Super Mario World cartoon, and alternatively pluralized
+        "Yoshies" in the original Super Mario World 2: Yoshi's Island) are a sapient species of omnivorous
+        dinosaur that first appeared in Super Mario World. They later starred in Super Mario World 2: Yoshi's
+        Island, Yoshi's Story, Yoshi Touch & Go, Yoshi's Island DS, Yoshi's New Island, Yoshi's Woolly World,
+        and Yoshi's Crafted World. The name is derived from the Japanese interjection "yoshi" (よし), meaning
+        "great". The most well-known Yoshi is simply named Yoshi and is an ally of Mario, often aiding Mario
+        or being a protagonist of his own adventures. Yoshis are characterized primarily by their production
+        and use of eggs as offensive tools. Yoshis can spontaneously lay hollow eggs after eating other
+        animals or fruit, and then use them as projectile weaponry; other eggs have been shown to hatch into
+        items, and some eggs hatch into baby Yoshis. In some games, such as the Super Smash Bros. series,
+        Yoshi is able to turn himself into an egg to either protect himself or to roll into others as an
+        attack. Yoshis come in a variety of colors, although green is the most common. Yoshis are most closely
+        associated with Yoshi's Island; however, they are a widespread species, found on a number of islands,
+        such as Lavalava Island and Isle Delfino, as well as the continental Mushroom Kingdom and the neighboring
+        Beanbean Kingdom.</p>
+        </section>
+    </article>
+    <br>
+    <h2>Facts About Yoshi</h2>
+    <!--These facts came from http://tonsoffacts.com/30-fun-awesome-facts-yoshi/-->
+        <ul">
+            <li>According to a 1993 Nintendo character guide, Yoshi’s full name is T. Yoshisaur Munchakoopas.</li>
+            <li> One of Yoshi’s abilities in Yoshi’s Island was shapeshifting into various things like a helicopter, car and submarine.</li>
+            <li>According to Nintendo, Yoshi isn’t a dinosaur but just a “Yoshi.”</li>
+            <li>In Mario Sports games, Yoshi is usually a speed type character, lending to the fact that he’s a fast runner.</li>
+        </ul>
+
+        <article>
+          <h2>Contact to learn more</h2>
+        <form action="index.html" class="form" method="get">
+          <p>
+           <label for="name">Your Name: </label>
+           <br>
+           <input id="name" type="text" size="140" name="name">
+          </p>
+          <p>
+            <label for="email">Your Email: </label>
+            <br>
+            <input id="email" type="text" size="140" name="email">
+          </p>
+          <p>
+            <label for="message">Your Message: </label>
+            <br>
+            <input id="message" type="text" size="140" name="message"></input>
+          </p>
+          <!--I used the size attribute to make the text fields longer, and I put in linebreakers so they
+          appear below the text-->
+          <p>
+            <span>Would you like to arrange a meet and greet with the yoshi?</span>
+            <br>
+            <label for="yes">Yes </label>
+            <input type="radio" id="yes" name="yoshi" value="yes">
+            <label for="no">No </label>
+            <input type="radio" id="no" name="yoshi" value="no">
+            <label for="maybe">Maybe </label>
+            <input type="radio" id="maybe" name="yoshi" value="maybe">
+          </p>
+          <p>
+            <button type="send" name="send">SEND</button>
+          </p>
+        </article>
+        <footer class="footer">
+          <p>&copy Yoshi.</p>
+      </footer>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+body{
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color:aqua;
+}
+
+#container{
+    width:1024px;
+    margin:0 auto;
+}
+
+header{
+    /*used a background image for the header*/
+    padding: 50px;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color:black;
+    background-image: url("../images/yoshi.jpg");
+  }
+
+  img{
+       float:left; /*used float to wrap text around the image*/
+  }
+
+  nav{
+    height:64px;
+    margin-bottom:20px;
+}
+
+nav li{
+    float:left; 
+    list-style-type: none; /*I did this to remove the bulets from the top*/
+}
+
+nav a{
+    display:block; 
+    text-align:center;
+    margin:0 75px; 
+    text-decoration:none; 
+    width:142px;
+    height:44px;
+}
+
+nav li a span{
+    display:block;
+    float:left;
+    font-size:1.6rem; 
+    line-height:2.5em; 
+    color:black; 
+}
+
+.using-rem{
+    font-size:2rem; /*used REM to change the size of the text above the image*/
+}
+
+.form{
+    border:0.5px grey solid;
+    padding:10px;
+    width:400px;
+    height:400px;
+    width:100%;
+    height:100%;
+    font-size:18px;
+}
+
+
+ul {
+    display: table; 
+    margin: 0 auto;
+    text-align: left;
+}
+
+.footer{
+    text-align: right; /*I did this to move the footer to the right side of the screen*/
+}
