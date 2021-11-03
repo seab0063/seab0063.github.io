@@ -14,8 +14,7 @@ header{
     padding: 50px;
     font-size: 60px;
     text-align: center;
-    text-transform: uppercase;
-    color:black;
+    color:grey;
     background-image: url("../images/yoshi.jpg");
   }
 
@@ -37,7 +36,8 @@ nav a{
     display:block; 
     text-align:center;
     margin:0 75px; 
-    text-decoration:none; 
+    text-decoration:none;
+    box-shadow: 3px 0px grey; /*used this property to put the vertical lines between the list items*/
     width:142px;
     height:44px;
 }
@@ -50,12 +50,13 @@ nav li a span{
     color:black; 
 }
 
+
 .using-rem{
     font-size:2rem; /*used REM to change the size of the text above the image*/
 }
 
 .form{
-    border:0.5px grey solid;
+    border:0.5px grey solid; /*Did this to put the box around the form*/
     padding:10px;
     width:400px;
     height:400px;
