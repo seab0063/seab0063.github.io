@@ -55,6 +55,7 @@ nav li a span{
     font-size:2rem; /*used REM to change the size of the text above the image*/
 }
 
+
 .form{
     border:0.5px grey solid; /*Did this to put the box around the form*/
     padding:10px;
