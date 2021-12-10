@@ -1,0 +1,451 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**************************************************
+                    Defaults
+**************************************************/
+
+html{
+    font-family: 'Open sans', sans-serif;
+}
+
+body{
+    width:760px;
+    margin:0 auto;
+}
+
+/**************************************************
+                    List
+**************************************************/
+
+.logo{
+    height:100px;
+    background:#222;
+}
+
+
+li a{
+    display:block;
+    background:#222;
+    text-align:center;
+    padding:2rem;
+}
+
+
+nav a{
+    text-decoration:none;
+    font-size:1.4rem;
+    color:#c78c06;
+}
+
+p{
+    padding-left:10px;
+    padding-bottom:10px;
+    line-height:1.5rem;
+    margin-top:10px;
+}
+
+h1{
+    font-size:5.2rem;
+    font-weight:bold;
+    color:white;
+    line-height: 7rem;
+    padding-left:10px;
+}
+
+h2{
+    font-size:4rem;
+    font-weight:bold;
+    padding-left:10px;
+    margin-top:20px;
+}
+
+h3{
+    font-size:3rem;
+    font-weight:bold;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding-left:10px;
+}
+
+h4{
+    font-weight:bold;
+    padding-left:10px;
+    border-bottom:3px solid #c78c06;
+}
+
+.image{
+    width:760px;
+}
+
+a{
+    color:white;
+}
+
+.button{
+    background-color:#222;
+    margin:10px;
+    font-size:2rem;
+    color:white;
+    text-align:center;
+    width:250px;
+    height:80px;
+}
+
+/**************************************************
+                    Main Banner
+**************************************************/
+
+.overlaycontainer{
+    position:relative;
+    /* an element with position relative will contain other elements with position absolute */
+}
+
+.imageback{
+    height:1000px;
+}
+
+.overlay{
+    color:white;
+    position:absolute;
+    top:100px;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    padding-top:100px;
+    height:700px;
+}
+
+/* make a background image that stretches beyond the width of a centered site */
+.overlaycontainer:after{
+    content: '';
+    background-image: url("../images/main-banner.jpg");
+
+    /* use background position and background size to make sure the image always covers the div and doesn't repeat */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position:absolute;
+    top:0;
+    height:100%;
+
+    /* use right and left to position this element in the center of its container */
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+
+
+    /* set the width to be the width of the browser window */
+    width:100vw;
+
+    /* set a negative z-index (or layer) to put this behind your content */
+    z-index: -1;
+}
+
+#connect{
+    background-color:#c78c06;
+}
+
+#withus{
+    color:#222;
+}
+
+.aboutus{
+    background-color:#ffe6ac;
+}
+
+#about{
+    width:720px;
+    margin-left:20px;
+    padding-top:20px;
+}
+
+.services{
+    background-color:#ffe6ac;
+}
+
+.service{
+    border-bottom:20px solid white;
+}
+
+
+.overlayercontain{
+    position:relative;
+    /* an element with position relative will contain other elements with position absolute */
+}
+
+.vision{
+    height:300px;
+}
+
+.overlayer{
+    color:white;
+    position:absolute;
+    top:50px;
+}
+
+/* make a background image that stretches beyond the width of a centered site */
+.overlayercontain:after{
+    content: '';
+    background-image: url("../images/vision.jpg");
+    background-repeat: no-repeat;
+
+    /* use background position and background size to make sure the image always covers the div and doesn't repeat */
+    background-position: center center;
+    background-size: 760px 300px;
+
+    position:absolute;
+    top:0;
+    height:100%;
+
+    /* use right and left to position this element in the center of its container */
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+
+
+    /* set the width to be the width of the browser window */
+    width:100vw;
+
+    /* set a negative z-index (or layer) to put this behind your content */
+    z-index: -1;
+}
+
+#learn{
+    background: rgba(0,0,0,0.5);
+    border:3px solid #c78c06
+}
+
+.ourteam{
+    background-color:#ffe6ac;
+}
+
+.member{
+    border-bottom:20px solid white;
+}
+
+.container{
+    width:150vh; /*100 viewport width*/
+    height:100vh; /*100 viewport height*/
+}
+
+
+/**************************************************
+                    Form
+**************************************************/
+.formbox{
+    padding:2rem 1rem;
+    font-size:1.2rem;
+}
+
+.texts label, .texts input, .texts textarea{
+    display:block;
+    width:100%;
+    font-size:1.2rem; /* form elements do not inherit font-size, as they have a default set */
+}
+
+.texts label{
+    margin-bottom:10px;
+}
+
+.texts input{
+    margin-bottom:1.2rem;
+}
+
+.texts textarea{
+    height:6em;
+}
+
+.radios{
+    margin-bottom:1rem;
+}
+
+#submit{
+    background-color:#222;
+    color:#c78c06;
+    font-size:1.3rem;
+    margin:20px;
+    padding:5px;
+}
+
+/**************************************************
+                    Table
+**************************************************/
+
+table{
+    width:100%;
+}
+
+table, tr, th, td{
+    border:1px solid black;
+}
+
+th, td{
+    padding: 1em 0; /* two values means top-bottom / left-right */
+}
+
+th{
+    background-color:#ffe6ac;
+}
+
+td{
+    padding-left:1em;
+}
+
+th:first-child{
+    width:60%;
+}
+
+/**************************************************
+                    Footer
+**************************************************/
+
+footer{
+    background-color:#222;
+    color:#c78c06;
+    height:100px;
+    padding-top:10px;
+    margin-top:20px;
+}
+
+/**************************************************
+                    Media Queries
+**************************************************/
+
+/*@media screen and (max-width:1200px){
+    /*header img{
+        width:100%;
+        height:50%;
+    }*/
+    
+    /*h1{
+        font-size:4rem;
+    }
+    
+    h2{
+        font-size:2.5rem;
+    }
+    
+    h3{
+        font-size:1.5rem;
+    }
+}*/
+
+/*@media screen and (min-width:760px){
+    nav ul{
+        justify-content:space-evenly;
+    }
+
+    nav li{
+        display:inline-block;
+        width:13%;
+        padding: 40px 0 50px 0
+    }
+    
+    .main-banner-img{
+        width:100%;
+    }
+    
+    h1{
+        font-size:4rem;
+    }
+    
+    h2{
+        font-size:2.5rem;
+    }
+    
+    h3{
+        font-size:2rem;
+    }
+    
+    .services{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr;
+    }
+
+    #digital{
+        grid-column:1 / 5;
+        grid-row:1;
+    }
+    
+    #marketing{
+        grid-column:2 / 6;
+        grid-row:1;
+    }
+    
+    #video{
+        grid-column: 1 / 2;
+        grid-row:2;
+    }
+
+    #web{
+        grid-column:1 / 2;
+        grid-row:2;
+    }
+
+    #print{
+        grid-column: 1 / 2;
+        grid-row:2;
+    }
+
+    #ourteam{
+        display:flex;
+    }
+
+}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+a{
+    /*remove underline from links with text-decoration*/
+    text-decoration:none;
+}
