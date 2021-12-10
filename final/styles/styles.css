@@ -91,9 +91,12 @@ p{
     margin-top:10px;
 }
 
+h1, h2, h3, h4{
+    font-weight:bold;
+}
+
 h1{
     font-size:5.2rem;
-    font-weight:bold;
     color:white;
     line-height: 7rem;
     padding-left:10px;
@@ -101,21 +104,18 @@ h1{
 
 h2{
     font-size:4rem;
-    font-weight:bold;
     padding-left:10px;
     margin-top:20px;
 }
 
 h3{
     font-size:3rem;
-    font-weight:bold;
     margin-top:10px;
     margin-bottom:10px;
     padding-left:10px;
 }
 
 h4{
-    font-weight:bold;
     padding-left:10px;
     border-bottom:3px solid #c78c06;
 }
@@ -144,29 +144,25 @@ a{
 
 .overlaycontainer{
     position:relative;
-    /* an element with position relative will contain other elements with position absolute */
 }
 
 .imageback{
-    height:1000px;
+    height:650px;
 }
 
 .overlay{
     color:white;
     position:absolute;
-    top:100px;
+    top:50px;
     background: rgba(0,0,0,0.5);
     color: #fff;
-    padding-top:100px;
-    height:700px;
+    padding-top:50px;
+    height:500px;
 }
 
-/* make a background image that stretches beyond the width of a centered site */
 .overlaycontainer:after{
     content: '';
     background-image: url("../images/main-banner.jpg");
-
-    /* use background position and background size to make sure the image always covers the div and doesn't repeat */
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -174,18 +170,13 @@ a{
     position:absolute;
     top:0;
     height:100%;
-
-    /* use right and left to position this element in the center of its container */
     left: 50%;
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
 
-
-    /* set the width to be the width of the browser window */
     width:100vw;
 
-    /* set a negative z-index (or layer) to put this behind your content */
     z-index: -1;
 }
 
