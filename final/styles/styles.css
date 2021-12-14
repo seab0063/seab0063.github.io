@@ -253,7 +253,7 @@ nav a{
 
     /* use background position and background size to make sure the image always covers the div and doesn't repeat */
     background-position: center center;
-    background-size: 760px 500px;
+    background-size: cover;
 
     position:absolute;
     top:0;
@@ -527,34 +527,34 @@ footer{
 /**************************************************
                     Vision
 **************************************************/
-.vision{
-    height:250px;
-}
-
-.overlayer{
-    top:40px;
-    width:1000px;
-    margin-left:100px;
-}
-
-.overlayercontain:after{
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    position:absolute;
-    top:0;
-    height:100%;
-    left:50%;
-    margin-left:-600px;
-
-    width:100%;
-
-    z-index: -1;
-}
-
-#learn{
-    width:250px;
-}
-
+    .vision{
+        height:250px;
+    }
+    
+    .overlayer{
+        top:40px;
+        width:1000px;
+        margin-left:100px;
+    }    
+    
+    .overlayercontain:after{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+        position:absolute;
+        top:0;
+        height:100%;
+        left:50%;
+        margin-left:-600px;
+    
+        width:100%;
+    
+        z-index: -1;
+    }
+    
+    #learn{
+        width:250px;
+    }
+    
 }
