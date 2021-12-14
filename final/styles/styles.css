@@ -178,11 +178,11 @@ a{
 
     position:absolute;
     top:0;
-    height:650px;
+    height:100%;
     left:50%;
     margin-left:-380px;
 
-    width:760px;
+    width:100%;
 
     z-index: -1;
 }
@@ -242,18 +242,11 @@ a{
     position:absolute;
     top:0;
     height:100%;
-
-    /* use right and left to position this element in the center of its container */
     left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+    margin-left: -380px;
 
+    width:100%;
 
-    /* set the width to be the width of the browser window */
-    width:100vw;
-
-    /* set a negative z-index (or layer) to put this behind your content */
     z-index: -1;
 }
 
