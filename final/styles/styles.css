@@ -48,7 +48,7 @@ table {
 }
 
 /**************************************************
-                    Defaults
+                    Defaults (Mobile First)
 **************************************************/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
 
@@ -61,8 +61,7 @@ body{
     margin:0 auto;
 }
 
-a{
-    /*remove underline from links with text-decoration*/
+a{ /*removed the underline from the links with text-decoration*/
     text-decoration:none;
 }
 
@@ -110,7 +109,7 @@ a{
     color:white;
 }
 
-.button{
+.button{ /*I did this to create the buttons containing links in each section that uses them*/
     background-color:#222;
     margin:10px;
     font-size:2rem;
@@ -141,6 +140,10 @@ li a{
     padding:2rem;
 }
 
+li a:hover{ /*so the list items can change color as seen in the mockup*/
+    background-color:#c78c06;
+    color:#222;
+}
 
 nav a{
     text-decoration:none;
@@ -156,7 +159,7 @@ nav a{
 }
 
 #searchbutton{
-    display:none;
+    display:none; /*removed the button so it won't be seen but still usable*/
 }
 
 
@@ -184,10 +187,10 @@ nav a{
 
 .overlaycontainer:after{
     content: '';
-    background-image: url("../images/main-banner.jpg");
+    background-image: url("../images/main-banner.jpg"); /*put the image in this way rather than in the HTML*/
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; /*so the image does not repeat*/
 
     position:absolute;
     top:0;
@@ -197,7 +200,7 @@ nav a{
 
     width:100%;
 
-    z-index: -1;
+    z-index: -1; /*to put the image behind other elements*/
 }
 
 #connect{
@@ -207,6 +210,10 @@ nav a{
 #withus{
     color:#222;
 }
+
+/**************************************************
+                    Content
+**************************************************/
 
 .aboutus{
     background-color:#ffe6ac;
@@ -224,6 +231,18 @@ nav a{
 
 .service{
     border-bottom:20px solid white;
+}
+
+.ourteam{
+    background-color:#ffe6ac;
+}
+
+#doe, #rite{
+    border-bottom:20px solid white;
+}
+
+#john, #bob{
+    width:760px;
 }
 
 /**************************************************
@@ -269,14 +288,6 @@ nav a{
 #learn{
     background: rgba(0,0,0,0.5);
     border:3px solid #c78c06
-}
-
-.ourteam{
-    background-color:#ffe6ac;
-}
-
-.member{
-    border-bottom:20px solid white;
 }
 
 
@@ -331,7 +342,7 @@ table, tr, th, td{
 }
 
 th, td{
-    padding: 1em 0; /* two values means top-bottom / left-right */
+    padding: 1em 0;
 }
 
 th{
@@ -395,10 +406,16 @@ footer{
         margin-top:20px;
     }
 
+    .headline{
+        padding-left:115px;
+        padding-top:50px;
+        padding-bottom:10px;
+    }
+
     .button{
         margin:10px;
         font-size:1.5rem;
-        width:95%;
+        width:95%; /*so it can be longer for the desktop*/
         height:20px;
         padding-top:30px;
     }
@@ -409,7 +426,7 @@ footer{
 
     nav{
         background-color:#222;
-        display:flex;
+        display:flex; /*used this property to keep the list items in the nav*/
         height:150px;
     }    
 
@@ -419,7 +436,7 @@ footer{
     }
     
     nav li{
-        display:inline-block;
+        display:inline-block; /*used this property to line up the list items horizontally*/
     }
     
     li a{
@@ -457,26 +474,17 @@ footer{
     }
     
     .overlaycontainer:after{
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    
-        position:absolute;
-        top:0;
-        height:100%;
-        left:50%;
+        background-size: cover; /*to keep the image the same size in the desktop version*/
         margin-left:-600px;
-    
-        width:100%;
-    
-        z-index: -1;
     }
     
     #connect{
         width:250px;
     }
 
-/*********************************************/
+/**************************************************
+                    About
+**************************************************/
     .aboutus{
         height:280px;
         padding-right:150px;
@@ -492,7 +500,7 @@ footer{
 /**************************************************
                     Flex
 **************************************************/
-    .services{
+    .services{ /*used the services for my one element minimum of flex*/
         background-color:white;
         display:flex;
         flex-wrap:wrap;
@@ -503,20 +511,10 @@ footer{
         background-color:#ffe6ac;
         width:317px;
         margin:8px;
-        border-bottom:8px
+        border-bottom:none;
     }
 
-    #ourservice{
-        padding-left:115px;
-        padding-top:50px;
-        padding-bottom:10px;
-    }
-
-    #digital{
-        width:475px;
-    }
-
-    #marketing{
+    #digital, #marketing{
         width:475px;
     }
 
@@ -538,23 +536,65 @@ footer{
     }    
     
     .overlayercontain:after{
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    
-        position:absolute;
-        top:0;
-        height:100%;
-        left:50%;
         margin-left:-600px;
-    
-        width:100%;
-    
-        z-index: -1;
     }
     
     #learn{
         width:250px;
+    }
+   
+/**************************************************
+                    Grid
+**************************************************/
+    .ourteam{ /*used the team members for my one element minimum of grid*/
+        background-color:white;
+        display:grid;
+        grid-template-columns:475px 475px;
+        justify-content:center;
+    }
+
+    .member{
+        background-color:#ffe6ac;
+    }
+
+    #john, #bob{
+        width:475px; /*to keep the images the same size as the text sections*/
+    }
+
+    #doe, #rite{
+        border-bottom:none;
+    }
+
+    #bob{
+        grid-column:2;
+        grid-row:2;
+    }
+
+/**************************************************
+                    Grid 2
+**************************************************/
+    .george{ 
+        width:950px;
+        margin-left:125px;
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:1fr 1fr;
+        justify-content:center;
+    }
+
+    .sendmessage{
+        grid-column:1;
+    }
+
+    .table{
+        grid-column:1 / 3;
+        grid-row:2;
+    }
+
+    .map{
+        width:475px;
+        grid-column:2;
+        grid-row:1;
     }
     
 }
